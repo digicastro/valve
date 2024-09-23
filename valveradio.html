@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valves</title>
+    <style>
+        @import url('./valveradiostyle.css');
+    </style>
+    
+</head>
+    <body>
+        <video id="I_feel_fantastic" autoplay muted playsinline loop disablepictureinpicture>
+            <source src="8bitifeelfantastic.mov" type="video/mp4">
+        </video>  
+        <audio id="radio" src="audio/Im Always Angry 2.mp3"></audio>
+        <button id="toggleButton" onclick="toggleSound()">play</button>
+        <script>
+            const video = document.getElementById('I_feel_fantastic');
+            const audio = document.getElementById('radio');
+            const button = document.getElementById('toggleButton');
+            const volumeSlider = document.getElementById('volumeSlider');
+            audio.volume = 0.3;
+            function toggleSound() {
+                video.play
+                if (audio.paused) {
+                    audio.play();
+                    button.textContent = 'pause'; 
+                } else {
+                    audio.pause();
+                    button.textContent = 'play';
+                }
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+

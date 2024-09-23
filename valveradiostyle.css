@@ -1,0 +1,60 @@
+
+body {
+  display:flex;
+  flex-direction: column;
+  align-items: center ;      
+  background: black;
+  background-size:cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: system-ui;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 2%;
+  color: rgb(0, 0, 0); /* Text color */
+  background-color: #ffffff; /* Button background color */
+  border: 3px solid #a2b9c7;
+
+  cursor: pointer; /* Pointer cursor on hover */
+  outline: none; /* Remove outline */
+}
+video{
+  display: flex;
+  object-fit: cover;
+  width: 80vw;
+  margin: 2.2% 10% 10%;
+  margin-bottom: 1%;
+  height: auto;
+  max-height: 82vh ;
+  
+}
+.video::-webkit-media-controls {
+  display: none ; /* Hide controls for WebKit browsers */
+}
+
+.video::-moz-media-controls {
+  display: none ; /* Hide controls for Firefox */
+}
+@media screen and (max-width: 646px){
+  video{
+    margin: 20% 0% 0%;
+    width: 95vw;
+    height: auto;
+  }
+
+  button{
+    margin-top: 7%;
+  }
+}
+
+
+
+  /* Medium screens 
+@media screen and (min-width: 600px) */
+
